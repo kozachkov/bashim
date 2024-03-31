@@ -1,0 +1,20 @@
+relatedPosts:
+  en: "Related Posts"
+  es: "Artículos Relacionados"
+differentLanguage:
+  en: "Read this page in a different language"
+  ru: "Прочитать эту запись на другом языке"
+description:
+  en: >-
+    2021
+  ru: >-
+    2021
+list_title:
+  en: "Posts"
+  ru: "Записи"
+title:
+  en: "Working with Bash"
+  ru: "Работа с оболочкой Баш (bash)"
+author:
+  en: Mikhail Kozachkov
+  ru: Михаил Козачков

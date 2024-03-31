@@ -1,0 +1,9 @@
+title: Bashim
+author_url: 
+description: >- # this means to ignore newlines until "baseurl:"
+baseurl: "/bashim"
+url: ""
+
+theme: minima
+plugins:
+  - jekyll-feed

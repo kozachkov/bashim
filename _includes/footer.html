@@ -1,0 +1,28 @@
+{% if page.layout != 'index' %}
+    {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+    {% if posts.size == 0 %}
+        {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+    {% endif %}
+    {% if posts.size >= 1 and page.name != 'index.md' %}
+        <footer class="lang-options">
+            <div class="wrapper">
+            <em>{{ site.data.translations['differentLanguage'][page.lang] }}:</em>
+            <ul>
+            {% for post in posts %}
+            <li><a href="{{ site.baseurl }}{{ post.url }}" class="{{ post.lang }}" title="View in {{post.lang}}">{{ site.data.languages[post.lang].icon }} {{ site.data.languages[post.lang].label }}</a></li>
+            {% endfor %}
+            </ul>
+            </div>
+        </footer>
+    {% endif %}
+{% endif %}
+
+<footer class="site-footer h-card">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <p>{{- site.data.translations.author[page.lang] | escape }} <a href="{{ site.author_url }}">{{ site.author_url }}</a></p>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,16 @@
+.lang-options {
+  margin-bottom: 10px;
+}
+
+.lang-options ul {
+  margin: 0;
+}
+
+.lang-options ul li {
+  float: left;
+  list-style: none;
+}
+
+.lang-options ul li:not(:first-child) {
+  margin-left: 30px;
+}
