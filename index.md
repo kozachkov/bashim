@@ -4,7 +4,7 @@ layout: home
 lang-ref: index
 ---
 
-# Оболочка (баш)
+# Оболочка (bash)
 
 * [Запуск оболочки (Bash)]({{ site.baseurl }}/ru/run_bash)
 * [Запуск оболочки (Bash). Отладка]({{ site.baseurl }}/ru/run_bash_practice)
